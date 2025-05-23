@@ -1,33 +1,51 @@
-# My Portfolio Website
+# AI & Drug Discovery Portfolio Website
+
+This website explores how Artificial Intelligence (AI) is revolutionizing drug discovery and pharmaceutical research. Built with HTML, CSS, and JavaScript, it is hosted via GitHub Pages.
+
+##  Technologies Used
+
+| Technology     | Purpose                                   |
+|----------------|-------------------------------------------|
+| HTML           | Markup structure                          |
+| CSS            | Styling and layout                        |
+| JavaScript     | Frontend interactivity (form, toggles)    |
+| GitHub Pages   | Deployment and hosting                    |
+
+---
+
+##  Site Architecture
+
+- `index.html` – Homepage, About section, Articles, Insights, and Contact form  
+- `styles.css` – Custom styling for layout, components, and responsive design  
+- `script.js` – JavaScript functions for interactivity (e.g., Read More/Read Less logic, contact form validation)  
+- `/images/` – Visual content for enhancing readability and engagement
+
+---
+## Website Content Overview
+
+The website includes the following sections:
+
+- `🏠 Home` – Introduction and welcome message.
+- `ℹ️ About` – Information about the blog’s mission and vision.
+- `📚 Articles` – In-depth articles covering:
+  - AI in drug development and predictive modeling
+  - Drug repurposing techniques
+  - Case studies (e.g., Sildenafil)
+  - Challenges, ethics, and data limitations
+- `📰 Insights` – Additional shorter articles with images and highlights.
+- `📨 Contact` – A contact form with success/error message handling.
+
+---
 
 
-Η ιστοσελίδα είναι κατασκευασμένη με HTML, CSS και JavaScript και φιλοξενείται μέσω του GitHub Pages.
+## 💻 Run Locally
 
-## Τεχνολογίες που χρησιμοποίησα
+To view the website on your local machine:
 
-- **HTML**: Για τη δομή της ιστοσελίδας.
-- **CSS**: Για το στυλ και τη διαρρύθμιση.
-- **JavaScript**: Για την αλληλεπίδραση και τη δυναμική παρουσίαση των έργων.
-- **GitHub Pages**: Για την φιλοξενία της ιστοσελίδας.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/afrodititzama/portfolio.git
 
-## Χαρακτηριστικά του Portfolio
 
-- **Blog**: Περιλαμβάνει μια ενότητα με άρθρα που αναλύουν τις τελευταίες εξελίξεις στην Τεχνητή Νοημοσύνη και την εφαρμογή της στη Φαρμακολογία.
-- **Projects**: Παρουσίαση των προσωπικών μου έργων, συμπεριλαμβανομένων των projects για την ανάπτυξη AI μοντέλων και εφαρμογών στην υγειονομική περίθαλψη.
 
-## Πώς να δείτε την Ιστοσελίδα
-
-Η ιστοσελίδα είναι διαθέσιμη στον παρακάτω σύνδεσμο:
-file:///Users/afrodititzama/Desktop/AI_DrugDiscovery/index.html#contact
-
-## Εγκατάσταση και Εκτέλεση Τοπικά
-
-Ακολουθήστε τα παρακάτω βήματα για να τρέξετε την ιστοσελίδα τοπικά στον υπολογιστή σας:
-
-### 1. Κλωνοποίηση του Repository
-Πρώτα, ο χρήστης πρέπει να κλωνοποιήσει το repository στον υπολογιστή του. Αυτό θα δημιουργήσει ένα τοπικό αντίγραφο των αρχείων της ιστοσελίδας στον υπολογιστή του.
-
-Για να το κάνει αυτό, ακολουθεί την εξής εντολή στο τερματικό του (ή command prompt στο Windows):
-
-```bash
-git clone https://github.com/your-username/portfolio.git
+   This website was created as a personal research project to combine biomedical science with artificial intelligence in an accessible and educational format.
