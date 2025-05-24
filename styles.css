@@ -1,0 +1,239 @@
+/* Basic Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Home Section Styling */
+#home {
+    background: url('drugandAI.webp') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#home h2 {
+    font-size: 2.5rem;
+}
+
+#home p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+/* Articles Section Styling */
+#articles {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#articles h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+article {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+article h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+article p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+article a {
+    display: inline-block;
+    text-decoration: none;
+    color: #f39c12;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Button Styling */
+article button, form button {
+    padding: 8px 16px;
+    background-color: blue; /* Blue background for buttons */
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+article button:hover, form button:hover {
+    background-color: darkblue; /* Darker blue on hover */
+}
+
+.long-content {
+    display: none;
+}
+
+/* Contact Section Styling */
+#contact {
+    padding: 50px 20px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+.article-card {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 16px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+    transition: transform 0.3s;
+}
+.article-card:hover {
+    transform: scale(1.01);
+}
+.article-card img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+button {
+    padding: 8px 14px;
+    border: none;
+    background-color: #0077cc;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+button:hover {
+    background-color: #005fa3;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+nav ul li a:hover {
+    background-color: #0077cc;
+    color: white;
+}
+#about {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 40px 0;
+    line-height: 1.6;
+}
+
+#about ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
