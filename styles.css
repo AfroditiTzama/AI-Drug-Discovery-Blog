@@ -1,239 +1,378 @@
-/* Basic Reset and Body Styling */
-* {
+/* ====== CSS Variables ====== */
+:root {
+    --color-primary: #0077cc;
+    --color-primary-dark: #005fa3;
+    --color-secondary: #f39c12;
+    --color-bg-light: #f9f9f9;
+    --color-bg-lighter: #f4f4f4;
+    --color-text-dark: #333333;
+    --color-text-muted: #666666;
+    --color-white: #ffffff;
+    --border-radius: 8px;
+    --transition-speed: 0.3s;
+  }
+  
+  /* ====== Basic Reset ====== */
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  
+  body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: var(--color-bg-lighter);
     line-height: 1.6;
-    color: #333;
-}
-
-/* Header Styling */
-header {
-    background: #333;
-    color: white;
+    color: var(--color-text-dark);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* ====== Header ====== */
+  header {
+    background: var(--color-text-muted);
+    color: var(--color-white);
     padding: 20px;
     text-align: center;
-}
-
-header h1 {
+  }
+  
+  header h1 {
     font-size: 2.5rem;
-}
-
-/* Navigation Styling */
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 1.1rem;
-}
-
-nav ul li a:hover {
-    color: #f39c12;
-}
-
-/* Home Section Styling */
-#home {
-    background: url('drugandAI.webp') no-repeat center center/cover;
-    color: white;
-    padding: 100px 20px;
-    text-align: center;
-}
-
-#home h2 {
-    font-size: 2.5rem;
-}
-
-#home p {
-    font-size: 1.2rem;
-    max-width: 700px;
-    margin: 20px auto;
-}
-
-/* Articles Section Styling */
-#articles {
-    padding: 50px 20px;
-    background-color: #fff;
-    text-align: center;
-}
-
-#articles h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-}
-
-article {
-    background-color: #f9f9f9;
-    padding: 20px;
-    margin-bottom: 30px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-article h3 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-}
-
-article p {
-    font-size: 1rem;
-    margin-bottom: 15px;
-    text-align: left;
-    line-height: 1.6;
-}
-
-article a {
-    display: inline-block;
-    text-decoration: none;
-    color: #f39c12;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-/* Button Styling */
-article button, form button {
-    padding: 8px 16px;
-    background-color: blue; /* Blue background for buttons */
-    border: none;
-    color: white;
-    font-size: 1.1rem;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s ease; /* Smooth hover transition */
-}
-
-article button:hover, form button:hover {
-    background-color: darkblue; /* Darker blue on hover */
-}
-
-.long-content {
-    display: none;
-}
-
-/* Contact Section Styling */
-#contact {
-    padding: 50px 20px;
-    background-color: #f1f1f1;
-    text-align: center;
-}
-
-#contact h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-form {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-form label {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-}
-
-/* Footer Styling */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
-
-footer p {
-    font-size: 1rem;
-}
-
-.article-card {
-    border: 1px solid #ccc;
-    border-radius: 12px;
-    padding: 16px;
-    margin: 20px 0;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    background-color: #fff;
-    transition: transform 0.3s;
-}
-.article-card:hover {
-    transform: scale(1.01);
-}
-.article-card img {
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-button {
-    padding: 8px 14px;
-    border: none;
-    background-color: #0077cc;
-    color: white;
-    border-radius: 6px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-button:hover {
-    background-color: #005fa3;
-}
-nav ul {
+  }
+  
+  /* ====== Navigation ====== */
+  nav {
+    background-color: var(--color-bg-light);
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  nav ul {
     list-style: none;
     display: flex;
+    justify-content: center;
     gap: 20px;
     padding: 0;
     margin: 0;
-    justify-content: center;
-    background-color: #f0f0f0;
-    padding: 10px 0;
-}
-
-nav ul li a {
+  }
+  
+  nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: var(--color-text-dark);
     font-weight: bold;
     padding: 8px 12px;
-    border-radius: 6px;
-}
-
-nav ul li a:hover {
-    background-color: #0077cc;
-    color: white;
-}
-#about {
-    background-color: #f9f9f9;
-    padding: 30px;
-    border-radius: 10px;
-    margin: 40px 0;
+    border-radius: var(--border-radius);
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+  }
+  
+  nav ul li a:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+  }
+  
+  /* ====== Section Infographic Banner ====== */
+  .infographic-banner {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: var(--color-bg-light);
+    padding: 16px 20px;
+    margin-bottom: 30px;
+    border-left: 6px solid var(--color-primary);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--color-primary);
+  }
+  
+  .infographic-banner svg {
+    width: 36px;
+    height: 36px;
+    fill: var(--color-primary);
+    flex-shrink: 0;
+  }
+  
+  /* ====== Home Section ====== */
+  #home {
+    background: url('drugandAI.webp') no-repeat center center/cover;
+    color: var(--color-blue);
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  #home h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+  }
+  
+  #home p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  }
+  
+  /* ====== Articles Section ====== */
+  #articles {
+    padding: 50px 20px;
+    background-color: var(--color-white);
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 50px auto;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  #articles h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: var(--color-primary);
+  }
+  
+  article {
+    background-color: var(--color-bg-light);
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  article h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: var(--color-primary-dark);
+  }
+  
+  article p {
+    font-size: 1rem;
+    margin-bottom: 15px;
     line-height: 1.6;
-}
-
-#about ul {
+    color: var(--color-text-muted);
+  }
+  
+  article a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-secondary);
+    font-weight: bold;
     margin-top: 10px;
-    padding-left: 20px;
+    transition: color var(--transition-speed);
+  }
+  article a:hover {
+    color: var(--color-primary);
+  }
+  
+  /* ====== Toggle Read More Button ====== */
+  button.toggle-btn {
+    padding: 8px 16px;
+    background-color: var(--color-primary);
+    border: none;
+    color: var(--color-white);
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    transition: background-color var(--transition-speed);
+  }
+  button.toggle-btn:hover {
+    background-color: var(--color-primary-dark);
+  }
+  
+  /* ====== Long Content with Fade Animation ====== */
+  .long-content {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    margin-top: 10px;
+    color: var(--color-text-dark);
+  }
+  
+  .long-content.show {
+    display: block;
+    opacity: 1;
+  }
+  
+  /* ====== Contact Section ====== */
+  #contact {
+    padding: 50px 20px;
+    background-color: var(--color-bg-lighter);
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  #contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--color-primary);
+  }
+  
+  form {
+    text-align: left;
+    background-color: var(--color-white);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: var(--color-text-dark);
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    resize: vertical;
+    transition: border-color var(--transition-speed);
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    border-color: var(--color-primary);
+    outline: none;
+  }
+  
+  button[type="submit"] {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 12px 24px;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    transition: background-color var(--transition-speed);
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: var(--color-primary-dark);
+  }
+  
+  #response-message {
+    margin-top: 15px;
+    font-weight: 600;
+    text-align: center;
+    display: none;
+  }
+  
+  /* ====== Footer ====== */
+  footer {
+    background-color: var(--color-text-dark);
+    color: var(--color-white);
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 0.9rem;
+    margin-top: auto;
+  }
+  
+  /* ====== Responsive ====== */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    #home {
+      padding: 60px 10px;
+    }
+  
+    #articles, #contact {
+      padding: 30px 10px;
+      margin: 0 10px 50px 10px;
+    }
+  }
+  /* ====== Toggle Read More Button ====== */
+button.toggle-btn {
+    padding: 8px 16px;
+    background-color: var(--color-primary);
+    border: none;
+    color: var(--color-white);
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    transition: background-color var(--transition-speed);
+}
+button.toggle-btn:hover {
+    background-color: var(--color-primary-dark);
 }
 
+/* ====== Long Content with Fade Animation ====== */
+.long-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+  }
+  
+  .long-content.show {
+    max-height: 500px; 
+    opacity: 1;
+  }
+  
+/* ====== General Container ====== */
+.container {
+    max-width: 1000px; 
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+ .section-frame {
+    padding: 50px 20px;
+    background-color: var(--color-white);
+    text-align: left; /* <=== ΕΔΩ γίνεται η στοίχιση κειμένου στο κέντρο */
+    max-width: 900px;
+    margin: 0 auto 50px auto;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+#about-blog {
+  background-color: #f9f9f9; /* ανοιχτό γκρι */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 40px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#about-blog h2 {
+  text-align: center;
+  color: #f1f4f6;
+  margin-bottom: 20px;
+}
+
+#about-blog p {
+  line-height: 1.6;
+  color: #f1f4f6;
+  margin-bottom: 15px;
+}
+
+#about-blog ul {
+  list-style-type: disc;
+  color: #f1f4f6;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+#about-blog li {
+  margin-bottom: 10px;
+}

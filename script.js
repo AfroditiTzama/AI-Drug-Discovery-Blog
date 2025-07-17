@@ -1,12 +1,18 @@
 function toggleContent(button) {
-    const article = button.closest("article"); // Βρίσκει το κοντινότερο article
+    const article = button.closest("article");
     const content = article.querySelector(".long-content");
 
     if (!content) return;
 
-    const isHidden = content.style.display === "none" || content.style.display === "";
-    content.style.display = isHidden ? "block" : "none";
-    button.textContent = isHidden ? "Read less" : "Read more";
+    const isVisible = content.classList.contains("show");
+
+    if (isVisible) {
+        content.classList.remove("show");
+        button.textContent = "Read more";
+    } else {
+        content.classList.add("show");
+        button.textContent = "Read less";
+    }
 }
 
 // Για την αποστολή της φόρμας "Contact"
