@@ -34,8 +34,11 @@ To view the website on your local machine:
 
 ---
 
-Navigate to the project folder:
-cd portfolio
+You can check out my live website here:
+
+👉 [https://afrodititzama.github.io/portfolio/](https://afrodititzama.github.io/portfolio/)
+
+
 
 
    This website was created as a personal research project to combine biomedical science with artificial intelligence in an accessible and educational format.
