@@ -36,8 +36,8 @@ To view the website on your local machine:
 
 You can check out my live website here:
 
-👉 [https://afrodititzama.github.io/portfolio/](https://afrodititzama.github.io/portfolio/)
-
+👉 [[https://afrodititzama.github.io/portfolio/](https://afrodititzama.github.io/portfolio/)
+](https://afrodititzama.github.io/AI-Drug-Discovery-Blog/)
 
 
 
