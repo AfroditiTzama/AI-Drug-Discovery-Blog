@@ -27,7 +27,7 @@ To view the website on your local machine:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/AfroditiTzama/portfolio.git
+   git clone https://github.com/AfroditiTzama/AI-Drug-Discovery-Blog.git
 
 2. Open `index.html` in your browser to view the website locally.
 
